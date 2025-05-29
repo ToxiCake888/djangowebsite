@@ -16,34 +16,20 @@
       class="form-signin w-100"
       style="max-width: 400px"
     >
-      <form>
-        <h1 class="h3 mb-3 fw-normal text-center">Please sign in</h1>
+      <form method="post">
+        {% csrf_token %}
+        <h1 class="h3 mb-3 fw-normal text-center">Registration</h1>
         <div class="form-floating mb-3">
-          <input
-            type="FIO"
-            class="form-control"
-            id="floatingInput"
-            placeholder="Your full name"
-          />
+          {{form.fullName}}
           <label for="floatingInput">Your full name</label>
         </div>
 
         <div class="form-floating mb-3">
-          <input
-            type="email"
-            class="form-control"
-            id="floatingInput"
-            placeholder="name@example.com"
-          />
+          {{form.email}}
           <label for="floatingInput">Email address</label>
         </div>
         <div class="form-floating mb-3">
-          <input
-            type="password"
-            class="form-control"
-            id="floatingPassword"
-            placeholder="Password"
-          />
+          {{form.password}}
           <label for="floatingPassword">Password</label>
         </div>
 
@@ -57,6 +43,11 @@
     </main>
   </div>
 </div>
+{% if messages %}
+<script>
+  alert({{ messages }});
+</script>
+{% endif %}
 <style>
   .signInForm {
     height: 100%;
