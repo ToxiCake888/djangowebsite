@@ -8,7 +8,6 @@ def registration(request):
         form = RegistrationForm(request.POST)
         print("Данные формы:", request.POST)  
         if form.is_valid():
-
             form.save()
             messages.success(request, "Регистрация успешна!")
             return redirect('homePage')
@@ -16,9 +15,8 @@ def registration(request):
             for field, errors in form.errors.items():
                 print(f"Поле {field}: {', '.join(errors)}")
             messages.error(request, "ошибки в форме")
-    else:
-        form = RegistrationForm()
-    return render(request, 'main/registration.html', {'form': form})
+
+    return render(request, 'main/registration.html')
 
 def index(request):
     return render(request, 'main/index.html')
