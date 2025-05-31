@@ -1,0 +1,96 @@
+.title{
+display: flex;
+justify-content: center;
+font-weight: 700;
+font-size: 42px;
+line-height: 150%;
+letter-spacing: 0%;
+color:  #3444B8;
+
+}
+
+.divider {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 10vh;
+  height: 2px;
+  background: #2A30B1;
+
+}
+.item{
+    color:#2A30B1;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    width: fit-content;
+}
+
+.goals-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.goals-section__card{
+display: flex;
+    justify-self: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+width: 60vw;
+margin: auto;
+top: 1935px;
+left: 407px;
+border-radius: 10px;
+box-shadow: 0px 0px 64px 0px #BEC8F5;
+
+}
+
+.goals-section__goals-title{
+display: block;
+font-family: PT Sans Narrow;
+color: #2F185F;
+
+font-weight: 700;
+font-size: 24px;
+line-height: 140%;
+letter-spacing: 0%;
+text-align: center;
+}
+
+.positioning{
+
+    bottom: 70px;
+    right: 40px;
+    position: relative;
+}
+
+.goals-section__absolute-image{
+    position: absolute;
+
+}
+
+.program-committee{
+    height:75vh;
+    grid-template-columns: repeat(1, 25%);
+    grid-template-rows: repeat(1, 70%);
+}
+
+.portrait{transform: scale(0.4);z-index: 1;object-fit: cover;border-radius: 6px;}
+
+.program-committee__card-container{position: relative;display: flex;justify-content: center;}
+.circles{position: absolute;    
+   }
+
+.program-committee__card{}
+.program-committee__title{font-size: 20px;}
+.program-committee__text{color:#191773}
+
+@media(max-width:860px) {
+.program-committee{
+        grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 70%);
+}
+}
