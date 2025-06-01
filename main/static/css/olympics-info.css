@@ -1,6 +1,6 @@
 .olympics-info__title{
 
-height: 90px;
+height: 10vh;
 top: 1089px;
 left: 165px;
 
@@ -14,16 +14,27 @@ color: #2A30B1;
 
 .olympics-info__grid{
 
-    height: 500px;
+    height: fit-content;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
 }
 .olympics-info__secondary-grid{
-
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 90%;
 }
 
 .olympics-info__grid-element{color: #2A30B1;padding: 20px;}
+
+@media(max-width:860px) {
+    .olympics-info__title{font-size:25px;height: fit-content;}
+    .olympics-info__secondary-grid{
+        left: 120px;
+        grid-template-columns:1fr ;
+        grid-template-rows:1fr 1fr;
+    }
+    .olympics-info__grid-element{font-size: 12px;}
+
+}
+

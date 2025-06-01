@@ -1,0 +1,57 @@
+.footer__container{height: 234px;width: 100vw;color: white;}
+.footer__left-container{margin-top: 6vh;margin-left: 8vw;}
+
+.footer__left{background-color: #4340C9;width: 70vw;height: 100%;flex-direction: column;}
+.footer__right{background-color: #0A72ED;width: 30vw;justify-content: center; align-items: center;flex-direction: column;}
+
+.footer__title{
+
+text-align: center;
+width: 100%;
+font-family: Montserrat;
+font-weight: 700;
+font-size: 32px;
+line-height: 150%;
+letter-spacing: 0%;
+}
+
+.footer__text{
+font-family: Montserrat;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: center;
+
+}
+
+.footer__left-title{
+font-family: Montserrat;
+font-weight: 700;
+font-size: 21px;
+line-height: 150%;
+letter-spacing: 0%;
+
+}
+
+.footer__left-text{
+font-family: Montserrat;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+letter-spacing: 0%;
+}
+.footer__left-secondary-text{font-family: Montserrat;
+font-weight: 500;
+font-size: 27px;
+line-height: 150%;
+letter-spacing: 0%;
+}
+
+.footer__map{justify-content: center;flex-direction: column;align-items: center;}
+
+@media (max-width:800px){
+    .footer__left-container{margin-top: 2vh;margin-left: 2vw;}
+    .footer__title{font-size: 16px;}
+    .footer__text{font-size: 10px;}
+}

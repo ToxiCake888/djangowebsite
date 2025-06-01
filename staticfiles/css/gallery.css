@@ -1,0 +1,17 @@
+.gallery__title{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.gallery{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gallery__grid{
+    grid-template-columns: repeat(5, 20vw);
+    grid-template-rows: repeat(3, 15vw);
+}
+
+
+.gallery__img{width: 100%;height: 100%;}

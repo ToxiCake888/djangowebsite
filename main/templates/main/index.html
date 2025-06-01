@@ -26,6 +26,14 @@
       rel="stylesheet"
       href="{% static 'css/olympics-info.css' %}"
     />
+    <link
+      rel="stylesheet"
+      href="{% static 'css/gallery.css'%}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'css/contacts.css'%}"
+    />
   </head>
   <body class="body">
     <section class="first-view vh-100 text-white">
@@ -124,7 +132,7 @@
     </section>
     <section class="goals-section">
       <div class="title m-5">Цели</div>
-      <section class="d-flex">
+      <section class="goals-section__list d-flex">
         <div class="item">Творческие способности</div>
         <div class="item">Одаренные дети</div>
         <div class="item">Научные знания</div>
@@ -149,7 +157,7 @@
       </section>
       <div class="title m-5">Программный комитет олимпиады</div>
     </section>
-    <section class="program-committee m-5 d-grid">
+    <section class="program-committee mt-5 d-grid">
       <section class="program-committee__card committee-grid-element">
         <div class="program-committee__card-container">
           <img
@@ -161,18 +169,222 @@
             class="circles"
           />
         </div>
-
-        <div class="program-committee__title title">Боев Василий Юрьевич</div>
-        <div class="program-committee__text">
-          проректор по учебной работе РГЭУ (РИНХ), заведующий кафедрой экономики
-          региона, отраслей и предприятий РГЭУ (РИНХ), к.э.н., доцент.
+        <div class="program-committee__card-text-container">
+          <div class="program-committee__title title">Боев Василий Юрьевич</div>
+          <div class="program-committee__text">
+            проректор по учебной работе РГЭУ (РИНХ), заведующий кафедрой
+            экономики региона, отраслей и предприятий РГЭУ (РИНХ), к.э.н.,
+            доцент.
+          </div>
+        </div>
+      </section>
+      <section class="program-committee__card committee-grid-element">
+        <div class="program-committee__card-container">
+          <img
+            src="{% static 'images/1.png'%}"
+            class="portrait"
+          />
+          <img
+            src="{% static 'images/circles.svg'%}"
+            class="circles"
+          />
+        </div>
+        <div class="program-committee__card-text-container">
+          <div class="program-committee__title title">
+            Романова Татьяна Федоровна
+          </div>
+          <div class="program-committee__text">
+            заведующий кафедрой финансов РГЭУ (РИНХ), д.э.н., профессор
+          </div>
+        </div>
+      </section>
+      <section class="program-committee__card committee-grid-element">
+        <div class="program-committee__card-container">
+          <img
+            src="{% static 'images/2.png'%}"
+            class="portrait"
+          />
+          <img
+            src="{% static 'images/circles.svg'%}"
+            class="circles"
+          />
+        </div>
+        <div class="program-committee__card-text-container">
+          <div class="program-committee__title title">
+            Мусаелян Анжелика Капреловна
+          </div>
+          <div class="program-committee__text">
+            заведующий кафедрой налогов и налогообложения РГЭУ (РИНХ), к.э.н.,
+            доцент
+          </div>
+        </div>
+      </section>
+      <section class="program-committee__card committee-grid-element">
+        <div class="program-committee__card-container">
+          <img
+            src="{% static 'images/3.png'%}"
+            class="portrait"
+          />
+          <img
+            src="{% static 'images/circles.svg'%}"
+            class="circles"
+          />
+        </div>
+        <div class="program-committee__card-text-container">
+          <div class="program-committee__title title">
+            Молчанов Евгений Григорьевич
+          </div>
+          <div class="program-committee__text">
+            декан факультета Экономики и финансов РГЭУ (РИНХ), к.э.н.
+          </div>
+        </div>
+      </section>
+      <section class="program-committee__card committee-grid-element">
+        <div class="program-committee__card-container">
+          <img
+            src="{% static 'images/4.png'%}"
+            class="portrait"
+          />
+          <img
+            src="{% static 'images/circles.svg'%}"
+            class="circles"
+          />
+        </div>
+        <div class="program-committee__card-text-container">
+          <div class="program-committee__title title">
+            Андреева Ольга Валентиновна
+          </div>
+          <div class="program-committee__text">
+            руководитель Центра стратегических исследований
+            социально-экономического развития Юга России
+          </div>
+        </div>
+      </section>
+      <section class="program-committee__card committee-grid-element">
+        <div class="program-committee__card-container">
+          <img
+            src="{% static 'images/5.png'%}"
+            class="portrait"
+          />
+          <img
+            src="{% static 'images/circles.svg'%}"
+            class="circles"
+          />
+        </div>
+        <div class="program-committee__card-text-container">
+          <div class="program-committee__title title">
+            Жебровская Людмила Анатольевна
+          </div>
+          <div class="program-committee__text">
+            начальник Управления компьютеризации учебной и административной
+            деятельности РГЭУ (РИНХ), к.э.н., доцент
+          </div>
+        </div>
+      </section>
+      <section class="program-committee__card committee-grid-element">
+        <div class="program-committee__card-container">
+          <img
+            src="{% static 'images/7.png'%}"
+            class="portrait"
+          />
+          <img
+            src="{% static 'images/circles.svg'%}"
+            class="circles"
+          />
+        </div>
+        <div class="program-committee__card-text-container">
+          <div class="program-committee__title title">
+            Медведкина Евгения Александровна
+          </div>
+          <div class="program-committee__text">
+            заведующий кафедрой мировой экономики РГЭУ (РИНХ), д.э.н., доцент
+          </div>
+        </div>
+      </section>
+      <section class="program-committee__card committee-grid-element">
+        <div class="program-committee__card-container">
+          <img
+            src="{% static 'images/8.png'%}"
+            class="portrait"
+          />
+          <img
+            src="{% static 'images/circles.svg'%}"
+            class="circles"
+          />
+        </div>
+        <div class="program-committee__card-text-container">
+          <div class="program-committee__title title">
+            Семенюта Ольга Гетовна
+          </div>
+          <div class="program-committee__text">
+            заведующий кафедрой банковского дела РГЭУ (РИНХ), д.э.н., профессор
+          </div>
         </div>
       </section>
     </section>
-    <section class="gallery d-grid">
-      <div class="title">Фотогалерея</div>
+    <section class="gallery d-flex">
+      <div class="gallery__title title vw-100">Фотогалерея</div>
+      <section class="gallery__grid d-grid">
+        {% for i in "12345" %}
+        <section class="gallery__grid-element">
+          <img
+            class="gallery__img"
+            src="{% static 'images/gallery0.png'%}"
+          />
+        </section>
+        <section class="gallery__grid-element">
+          <img
+            class="gallery__img"
+            src="{% static 'images/gallery1.png'%}"
+          />
+        </section>
+        <section class="gallery__grid-element">
+          <img
+            class="gallery__img"
+            src="{% static 'images/gallery2.png'%}"
+          />
+        </section>
+        {% endfor %}
+      </section>
     </section>
-    <section class="contacts"></section>
-    <section class="footer-map"></section>
+    <section class="contacts">
+      <div class="title m-5">Контакты</div>
+      <section class="footer__container d-flex">
+        <section class="footer__left d-flex">
+          <section class="footer__left-container">
+            <section class="footer__left-title">
+              г. Ростов-на-Дону, ул. Б. Садовая, 69
+            </section>
+            <section class="footer__left-text">
+              Ростовский государственный экономический университет (РИНХ)
+            </section>
+            <section class="footer__left-secondary-text">
+              Точка кипения РГЭУ (РИНХ)
+            </section>
+          </section>
+        </section>
+        <section class="footer__right d-flex">
+          <div class="footer__title">+7 (863) 345-40-40</div>
+          <div class="footer__text">fnauka@bk.ru</div>
+        </section>
+      </section>
+    </section>
+    <section class="footer__map d-flex">
+      <div style="map-container position: relative; overflow: hidden">
+        <a
+          href="https://yandex.ru/maps/org/tochka_kipeniya_rgeu/108968013604/?utm_medium=mapframe&utm_source=maps"
+          style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+          >Точка кипения Ргэу</a
+        ><iframe
+          src="https://yandex.ru/map-widget/v1/?ll=39.718166%2C47.222852&mode=search&oid=108968013604&ol=biz&z=15"
+          width="2000"
+          height="800"
+          frameborder="1"
+          allowfullscreen="true"
+          style="position: relative"
+          class="map"
+        ></iframe>
+      </div>
+    </section>
   </body>
 </html>
