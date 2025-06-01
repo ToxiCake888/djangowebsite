@@ -101,7 +101,7 @@ text-align: center;
    }
 
 
-.program-committee__title{font-size: 20px;padding: 10px;}
+.program-committee__title{font-size: 20px;padding: 20px;text-align: center;}
 .program-committee__text{color:#191773 ;text-align: center; margin: 20px;}
 
 @media(max-width:860px) {
@@ -110,4 +110,15 @@ text-align: center;
     grid-template-rows: repeat(4, 50vh);
     height:200vh;
 }
+.item{font-size: 10px;}
+}
+
+@media(max-width:450px) {
+    .program-committee{
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(8, 50vh);
+    height:400vh;
+}
+    /* .portrait{transform: scale(0.6);}
+    .circles{transform: scale(0.6);} */
 }
