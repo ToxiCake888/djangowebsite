@@ -1,21 +1,21 @@
 
 @font-face {
     font-family: Montserrat;
-    src: url('{% static "fonts/Montserrat-VariableFont_wght.ttf" %}') ;
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') ;
 }
 
 @font-face {
     font-family: MontserratItalic;
-    src: url('{% static "fonts/Montserrat-Italic-VariableFont_wght.ttf" %}') ;
+    src: url('../fonts/Montserrat-Italic-VariableFont_wght.ttf') ;
 }
 
 @font-face {
     font-family: ptsans;
-    src: url('{% static "fonts/PTSansNarrow-Regular.ttf" %}') ;
+    src: url('../fonts/PTSansNarrow-Regular.ttf') ;
     
 }
 
 @font-face {
     font-family: ptsansBold;
-    src: url('{% static "fonts/PTSansNarrow-Bold.ttf" %}') ;
+    src: url('../fonts/PTSansNarrow-Bold.ttf') ;
 }
