@@ -84,8 +84,8 @@ text-align: center;
     margin-left: 0px;
     width: 100vw;
     height:100vh;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(2, 50vh);
+    grid-auto-columns: 20vw;
+    grid-auto-rows: max-content;
 }
 
 .portrait{z-index: 1;object-fit: cover;border-radius: 6px;transform: scale(1);  }
@@ -106,8 +106,8 @@ text-align: center;
 
 @media(max-width:860px) {
 .program-committee{
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4, 50vh);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     height:200vh;
 }
 .item{font-size: 10px;}
@@ -115,8 +115,8 @@ text-align: center;
 
 @media(max-width:450px) {
     .program-committee{
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(8, 50vh);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     height:400vh;
 }
     /* .portrait{transform: scale(0.6);}
