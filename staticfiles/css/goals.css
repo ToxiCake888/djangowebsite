@@ -84,8 +84,13 @@ text-align: center;
     margin-left: 0px;
     width: 100vw;
     height:100vh;
+<<<<<<< HEAD
     grid-auto-columns: 20vw;
     grid-auto-rows: max-content;
+=======
+    grid-auto-columns: repeat(4, 1fr);
+    grid-auto-rows: repeat(2, 1fr);
+>>>>>>> 5cd46b260b5b5ee0b45644dbd62e7ecda2c51f4d
 }
 
 .portrait{z-index: 1;object-fit: cover;border-radius: 6px;transform: scale(1);  }
