@@ -6,6 +6,14 @@
 Для внешнего вида использовался макет из figma и bootstrap.
 Серверная часть выполнена на python django.
 
+# Стек технологий
+
+- Python 3.12
+- Html/css
+- Django
+- Bootstrap
+- Postgres
+
 # Запуск
 
 1. Иметь установленными python, pip, postgres
