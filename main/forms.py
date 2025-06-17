@@ -1,6 +1,7 @@
 from .models import Contestant
 from django.forms import ModelForm,TextInput
-
+from django.db import models
+from django.core.validators import RegexValidator
 class RegistrationForm(ModelForm):
     class Meta:
         model=Contestant
@@ -23,7 +24,8 @@ class RegistrationForm(ModelForm):
             'class':"form-control",
             'id':"floatingPhone",
             'data-phone-pattern': '+7 (###) ###-##-##',
-            'placeholder':" "
+            'placeholder':" ",
+            'pattern': r'^(\+7|8)?[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$'
         }),
         "email":TextInput(attrs={
             'type':"email",
@@ -33,3 +35,4 @@ class RegistrationForm(ModelForm):
         })
 
         }
+    
