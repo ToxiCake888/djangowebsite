@@ -12,6 +12,10 @@
     />
     <link
       rel="stylesheet"
+      href="{% static 'css/body.css'%}"
+    />
+    <link
+      rel="stylesheet"
       href="{% static 'css/fonts.css'%}"
     />
     <link
@@ -96,11 +100,11 @@
           Ростовское региональное отделение Вольного экономического общества
           России
         </div>
-        <div class="first-view__footer-element">
+        <div class="first-view__footer-element grid-supportsers-1">
           Аппарата полномочного представителя Президента РФ в Южном федеральном
           округе
         </div>
-        <div class="first-view__footer-element">
+        <div class="first-view__footer-element grid-supportsers-2">
           Правительства Ростовской области
         </div>
       </section>
@@ -331,7 +335,7 @@
       </section>
     </section>
     <section class="gallery d-flex">
-      <div class="gallery__title title vw-100">Фотогалерея</div>
+      <div class="gallery__title title vw-100 mt-5 mb-5">Фотогалерея</div>
       <section class="gallery__grid d-grid">
         {% for i in "12345" %}
         <section class="gallery__grid-element">
@@ -359,36 +363,32 @@
       <div class="title m-5">Контакты</div>
       <section class="footer__container d-flex">
         <section class="footer__left d-flex">
-          <section class="footer__left-container">
-            <section class="footer__left-title">
-              г. Ростов-на-Дону, ул. Б. Садовая, 69
-            </section>
-            <section class="footer__left-text">
-              Ростовский государственный экономический университет (РИНХ)
-            </section>
-            <section class="footer__left-secondary-text">
-              Точка кипения РГЭУ (РИНХ)
-            </section>
+          <section class="footer__left-title">
+            г. Ростов-на-Дону, ул. Б. Садовая, 69
+          </section>
+          <section class="footer__left-text col-8">
+            Ростовский государственный экономический университет (РИНХ)
+          </section>
+          <section class="footer__left-secondary-text col-8">
+            Точка кипения РГЭУ (РИНХ)
           </section>
         </section>
-        <section class="footer__right d-flex">
+        <section class="footer__right">
           <div class="footer__title">+7 (863) 345-40-40</div>
           <div class="footer__text">fnauka@bk.ru</div>
         </section>
       </section>
     </section>
     <section class="footer__map d-flex">
-      <div style="map-container position: relative; overflow: hidden">
-        <iframe
-          src="https://yandex.ru/map-widget/v1/?ll=39.718166%2C47.222852&mode=search&oid=108968013604&ol=biz&z=15"
-          width="4800"
-          height="800"
-          frameborder="1"
-          allowfullscreen="true"
-          style="position: relative"
-          class="map"
-        ></iframe>
-      </div>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?ll=39.718166%2C47.222852&mode=search&oid=108968013604&ol=biz&z=15"
+        width="100%"
+        height="800"
+        frameborder="1"
+        allowfullscreen="true"
+        style="position: relative"
+        class="map"
+      ></iframe>
     </section>
   </body>
 </html>

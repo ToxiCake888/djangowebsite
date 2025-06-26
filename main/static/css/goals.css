@@ -1,3 +1,7 @@
+.goals-section{
+
+}
+
 .title{
 display: flex;
 justify-content: center;
@@ -80,8 +84,7 @@ text-align: center;
 }
 
 .program-committee{
-    margin-right: 0px;
-    margin-left: 0px;
+    overflow: hidden;
     width: 100vw;
     height:1500px;
     grid-template-columns: repeat(4, 25%);
